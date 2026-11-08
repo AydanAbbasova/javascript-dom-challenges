@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    font-family: "Trebuchet MS", sans-serif;
+    background: linear-gradient(135deg, #fdf2e9, #f5cba7);
+}
+
+main {
+    width: 100%;
+    max-width: 1100px;
+    box-sizing: border-box;
+    padding: 56px;
+    background-color: white;
+    border-radius: 32px;
+    box-shadow: 0 20px 60px rgba(110, 44, 0, 0.25);
+}
+
+h1 {
+    margin: 0 0 40px;
+    font-size: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #6e2c00;
+}
+
+#productContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+}
+
+.product-card {
+    padding: 32px 24px;
+    text-align: center;
+    background-color: #fdf2e9;
+    border-top: 6px solid #e67e22;
+    border-radius: 20px;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+}
+
+.product-card h2 {
+    margin: 0 0 12px;
+    font-size: 26px;
+    color: #6e2c00;
+}
+
+.product-card p {
+    margin: 0 0 24px;
+    font-size: 34px;
+    font-weight: bold;
+    color: #e67e22;
+}
+
+.product-card button {
+    width: 100%;
+    padding: 14px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #e67e22;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: #ca6f1e;
+}
+
+#cart {
+    margin-top: 40px;
+    padding: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    color: white;
+    background-color: #6e2c00;
+    border-radius: 20px;
+}
+
+#cart h2 {
+    margin: 0 0 16px;
+    grid-column: 1 / -1;
+    font-size: 28px;
+}
+
+#cart p {
+    margin: 0;
+    font-size: 26px;
+}
+
+#cart p:last-child {
+    text-align: right;
+    font-weight: bold;
+    color: #f5b041;
+}
+
+#cartList {
+    margin: 0 0 24px;
+    padding: 0;
+    grid-column: 1 / -1;
+    list-style: none;
+}
+
+#cartList li {
+    padding: 14px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+#cartList li span:last-child {
+    font-weight: bold;
+    color: #f5b041;
+}

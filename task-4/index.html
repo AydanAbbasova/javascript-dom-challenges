@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Accordion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>FAQ</h1>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                What is DOM?
+                <span>+</span>
+            </button>
+            <p class="faq-answer">
+                DOM stands for Document Object Model.
+            </p>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                What is querySelector()?
+                <span>+</span>
+            </button>
+            <p class="faq-answer">
+                It selects the first matching element.
+            </p>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                What is addEventListener()?
+                <span>+</span>
+            </button>
+            <p class="faq-answer">
+                It runs a function when an event happens, for example a click.
+            </p>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                What is Event Bubbling?
+                <span>+</span>
+            </button>
+            <p class="faq-answer">
+                An event starts on the clicked element and then goes up to its parent elements.
+            </p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

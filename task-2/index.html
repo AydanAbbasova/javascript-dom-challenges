@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Character Counter</h1>
+
+        <textarea
+            id="message"
+            maxlength="100"
+            placeholder="Write your message..."
+        ></textarea>
+
+        <p id="counter">0 / 100</p>
+        <progress id="progress" max="100" value="0"></progress>
+
+        <p id="remaining">Remaining: 100</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
